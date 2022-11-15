@@ -1,6 +1,5 @@
 package com.example.demo.domethods;
 
-import com.example.demo.domain.Employee;
 import com.example.demo.repository.EmployeeRepository;
 import com.example.demo.repository.EmployeeRepositoryImpl;
 import com.example.demo.service.EmployeeService;
@@ -8,18 +7,13 @@ import com.example.demo.service.EmployeeServiceImpl;
 import com.example.demo.service.IRPFCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.*;
 
-public class DoCallRealMethod {
+public class DoCallRealMethodTest {
 
     EmployeeRepository repository;
     EmployeeService service;

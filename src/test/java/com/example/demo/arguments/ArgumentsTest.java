@@ -34,7 +34,7 @@ public class ArgumentsTest {
 
         Employee employee1 = new Employee(1L, "Emp1", 30);
 
-        // when(repository.findOne(1L)).thenReturn(employee1);
+//         when(repository.findOne(1L)).thenReturn(employee1);
         when(repository.findOne(anyLong())).thenReturn(employee1);
 
         Employee employeeResult1 = service.findOne(1L);
